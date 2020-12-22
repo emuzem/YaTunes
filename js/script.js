@@ -17,5 +17,7 @@ playerBtn.forEach((el, i) => {
         disableBlocks();
         el.classList.add('active');
         playerBlock[i].classList.add('active');
-    })
-})
+    });
+});
+
+videoInit();
