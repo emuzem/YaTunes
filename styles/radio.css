@@ -1,0 +1,19 @@
+.radio-progress{
+    max-width: 200px;
+    appearance: auto;
+}
+.radio-progress-wrapper {
+    display: flex;
+}
+.radio-progress-wrapper span {
+    margin: 12px;
+}
+
+.radio-stop {
+    text-align: center;
+}
+.mute-radio{
+    background: transparent;
+    border: none;
+    margin-left: 160px;
+}
