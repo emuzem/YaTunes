@@ -23,7 +23,13 @@ export const radioInit = () => {
     radioProgress.addEventListener('input', ()=> {
         radioPlayer.volume = radioProgress.value;
         currentRadioProgressValue = radioProgress.value;
+        if(radioProgress.value === '0'){
+            mute.textContent = '🔇';
+        } else {
+            mute.textContent = '🔊';
+        }
     });
+
 
     mute.addEventListener('click', muteVol);
 
