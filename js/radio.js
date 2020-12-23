@@ -22,12 +22,14 @@ export const radioInit = () => {
 
     radioProgress.addEventListener('input', ()=> {
         radioPlayer.volume = radioProgress.value;
-        currentRadioProgressValue = radioProgress.value;
         if(radioProgress.value === '0'){
             mute.textContent = '🔇';
+            return 0;
         } else {
             mute.textContent = '🔊';
         }
+        currentRadioProgressValue = radioProgress.value;
+
     });
 
 
